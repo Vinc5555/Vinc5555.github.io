@@ -5,5 +5,13 @@
     "display": "fullscreen",
     "background_color": "rgb(190, 190, 190)",
     "theme_color": "rgb(180, 180, 180)",
-    "orientation": "portrait-primary"
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/img/Antu_Charm_144x144.png",
+            "type": "image/png",
+            "sizes": "144x144",
+            "purpose": "any"
+
+        }]
 }
