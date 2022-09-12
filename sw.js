@@ -8,7 +8,9 @@ const assets = [
     "/manifest.json",
     "/styles.css",
     "/images/20160711_104300_HDR.jpg",
+    "/images/Antu_Charm_144x144.png",
     "https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+
 ];
 
 //Service Worker für Caching aller nötigen Elemente
