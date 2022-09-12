@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="Stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preload" as="image" href="images/20160711_104300_HDR.jpg">
+</head>
+<body onload="onload()">
+
+    <div id="mytopbar" class="topbar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="norm"><h2>Einstellungen</h2>
+                <p>End-Datum und End-Uhrzeit wählen</p>
+               <input type="datetime-local" id="daytime" placeholder="Datum und Uhrzeit auswählen"  value="" min="" >
+                    <button type="button" onclick=dateAuswahl();showEnddate();showProgressbar()>Start</button>
+            </div> 
+        
+   </div>
+    
+   
+
+    
+        <div id="box">
+            <button class="openbtn" onclick=openNav()>☰ Open Menu</button>
+            <div class="norm" id="currTime"><p>Hier kommt die aktuelle Uhrzeit hin</p></div>
+            <div class="norm" id="endDate"><p>Hier kommt das End Datum</p></div>
+            <div class="progress">
+                <div id="progress-done"></div>
+            </div>
+            <div class="norm"id="differenz"><p>Hier kommt die Differenz rein</p></div>
+        </div>
+    
+                
+<script type="text/javascript" src="jscript.js">
+
+
+
+    </script>
+    
+    
+</body>
+</html>

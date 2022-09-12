@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:wght@100&display=swap');
+
+
+
+body {
+
+   
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 20px;
+    color:#ffffff;
+    background-image: url("images/20160711_104300_HDR.jpg");
+    background-repeat: no-repeat;
+    background-size:  cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+@media only screen and (max-width: 600px){
+  
+   body{
+    font-size: 18px;
+  }
+  #box{
+    position: fixed;
+    display: block;
+    bottom: 0;
+    width:100%;
+  }
+  .openbtn {
+    font-size: 3px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    align-items: center;
+    
+    
+  }
+  .topbar{
+    height:100px;
+    font-size: 8px;
+  } 
+  
+}
+
+#auswahl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* #main {
+    transition: margin-left .5s;
+    padding: 16px; 
+}
+  */
+
+#box{
+  width: 400px;
+  height:200px;
+  background:rgba(0,0,0,.3);
+  /* padding: auto;
+  margin: auto; */
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+      
+}
+
+.progress{
+  height:10px;
+  /* width: 300px; */
+  width:100%;
+  background-color: rgb(203, 219, 83);
+}
+
+#progress-done{
+  height: 100%;
+  width:1%;
+  background-color: rgb(253, 166, 4);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s ease;
+}
+
+div.red{
+color:rgb(243, 8, 8);
+animation: blinker 1s linear infinite;
+text-align: center;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+div.norm{
+color: rgb(254, 254, 254);
+justify-content: center;
+text-align: center;
+}
+
+.topbar {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    background:rgba(0,0,0,.3);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .topbar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: flex;
+    transition: 0.3s;
+  }
+  
+  .topbar a:hover {
+    color: #000000;
+  }
+  
+  .topbar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 10px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    right: 25px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  } 
+   
+ 
+  
